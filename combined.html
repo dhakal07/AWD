@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajiv Dhakal - Portfolio</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #cc5500;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00aaff;
+    }
+
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Rajiv Dhakal</h1>
+    <p>Welcome to my portfolio! Explore my expertise in AI, Cloud Computing, and more.</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am an ambitious Information Technology student with a passion for technology and a background in Environmental Engineering.</p>
+  </section>
+
+  <section id="work">
+    <h2>My Work</h2>
+    <p>Explore my projects in cybersecurity, cloud computing, and web development.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:rdblueblack07@gmail.com">rdblueblack07@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/rajiv-dhakal-5761911b3/" target="_blank">Rajiv Dhakal</a></p>
+    <p>GitHub: <a href="https://github.com/dhakal07" target="_blank">dhakal07</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Rajiv Dhakal. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav ul li a').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
